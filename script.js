@@ -1,5 +1,6 @@
 const imagemVisualizacao = document.getElementById('imagem-visualizacao');
 const tituloProduto = document.getElementById('titulo-produto');
+const nomeCor = document.getElementById('nome-cor-selecionada')
 
 const verdeCipreste = {
   nome: 'Verde-cipreste',
@@ -60,4 +61,5 @@ function trocarCor() {
   ).id;
   corSelecionada = idOpcaoSelecionada.charAt(0)
   tituloProduto.innerText = `Pulseira loop esportiva ${opcoesCores[corSelecionada].nome} para caixa de ${opcoesTamanhos[tamanhoSelecionado]}`
+  nomeCor.innerText = `Cor - ${opcoesCores[corSelecionada].nome}`
 }
