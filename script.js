@@ -46,7 +46,7 @@ function trocarTamanho() {
     '[name="opcao-tamanho"]:checked',
   ).id;
   tamanhoSelecionado = idOpcaoSelecionada.charAt(0);
-  tituloProduto.innerText = `Pulseira loop esportiva azul-inverno para caixa de ${opcoesTamanhos[tamanhoSelecionado]}`;
+  tituloProduto.innerText = `Pulseira loop esportiva ${opcoesCores[corSelecionada].nome} para caixa de ${opcoesTamanhos[tamanhoSelecionado]}`;
   if (opcoesTamanhos[tamanhoSelecionado] === '41 mm') {
     imagemVisualizacao.classList.add('caixa-pequena');
   } else {
